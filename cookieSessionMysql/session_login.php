@@ -5,11 +5,12 @@
  * Date: 2021/1/22
  * Time: 13:20
  */
-require_once './autoload.php';
 
 if($_POST['submit'] = "submit"){
     session_start();
-    if($_COOKIE['username'] == $_SESSION['username'] &&$_COOKIE['password'] == $_SESSION['password']) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    if($_SESSION['username'] == $username  && $_SESSION['password'] == $password) {
         echo '登录成功';
         header('refresh:2;url=list.php');
     }else{

@@ -16,6 +16,3 @@ function databases($className)
         echo "自动加载类失败";
     }
 }
-
-$link = new  DB();
-$link->conn();

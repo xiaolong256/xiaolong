@@ -35,7 +35,4 @@ class DB
         }
         return $link;
     }
-
-
-
 }

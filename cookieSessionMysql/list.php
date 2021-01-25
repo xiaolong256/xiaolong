@@ -36,5 +36,8 @@ $result = mysqli_query($conn,$sql);
 </table>
     </div>
 </div>
+<div class="col-lg-12 text-center">
+<a href="logout.php" class="btn btn-danger">退出登录</a>
+</div>
 </body>
 </html>
