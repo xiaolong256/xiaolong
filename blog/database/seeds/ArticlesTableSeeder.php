@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Article;
+use Illuminate\Support\Facades\DB;
 class ArticlesTableSeeder extends Seeder
 {
     /**
@@ -12,11 +12,10 @@ class ArticlesTableSeeder extends Seeder
     public function run()
     {
         //
-       // $article = factory(App\Models\Article::class,50)->create();
-          DB::table('articles')->insert([
-             'title' 	=>Str::random(10),
-             'user_id'  => rand(1,10),
-             'content'  =>'按时发生就安抚按时沙发按时发顺丰然后',
-          ]);
-    }
+
+       DB::table('articles')->insert([
+            'title' => 'Laravel ',
+            'user_id'=>rand(1,10),
+            'content'=>'Laravel 包含一个填充类可以为你的数据库填充测试数据。所有的填充类都放在 database/seeds 目录下。',
+]); }
 }
