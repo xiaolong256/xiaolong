@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="thumbnail col-lg-5 col-lg-offset-3">
+    <div class="caption">
+<form class="form-horizontal" action="register.php" method="post" >
+        <h2 style="color:red;" class="text-center">用户注册</h2>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">姓名：</label>
+            <div class="col-sm-8">
+                <input type="text" name="username" class="form-control">
+            </div>
+        </div>
+    <div class="form-group">
+        <label  class="col-sm-2 control-label">密码：</label>
+        <div class="col-sm-8">
+            <input type="password" name="password" class="form-control">
+        </div>
+    </div>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">性别：</label>
+            <div class="col-sm-4">
+                <label class="radio-inline">
+                    <input  type="radio" checked name="sex" value="男士"> 男士
+                    </label>
+                <label class="radio-inline">
+                    <input type="radio" name="sex" value="女士"> 女士
+                </label>
+            </div>
+        </div>
+    <div class="form-group">
+        <div class="col-lg-12 text-center">
+            <input type="submit" class="btn btn-primary" name="submit" value="提交">
+        </div>
+    </div>
+</form>
+    </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
